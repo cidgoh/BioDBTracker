@@ -29,12 +29,6 @@ Ensure you have Python installed. We recommend using Conda for managing dependen
     conda activate BioDBTracker
     ```
 
-3. Install any additional dependencies if needed:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
 ## Usage
 
 Run the script with the following command:
