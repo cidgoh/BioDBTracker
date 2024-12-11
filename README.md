@@ -59,6 +59,41 @@ Here's an example command:
 ```bash
 python scan_cidgoh_db.py -i samples/input1 samples/input2 -db sample_db -gs -gsn MyGoogleSheet -gss Sheet1 -gsc my-google-credentials.json
 ```
+## How to Generate the Google Sheets Authentication File
+
+To enable Google Sheets integration, you need to generate a credentials file (JSON) from the Google Cloud Console. Follow these steps:
+
+1. **Go to the Google Cloud Console:**
+   - Visit [Google Cloud Console](https://console.cloud.google.com/).
+
+2. **Create a New Project:**
+   - If you don’t already have a project, create one by clicking on **Select a Project** > **New Project**.
+
+3. **Enable the Google Sheets API:**
+   - Navigate to **APIs & Services** > **Library**.
+   - Search for "Google Sheets API" and click **Enable**.
+
+4. **Enable the Google Drive API:**
+   - Similarly, search for "Google Drive API" and click **Enable**.
+
+5. **Create Credentials:**
+   - Go to **APIs & Services** > **Credentials**.
+   - Click **Create Credentials** > **Service Account**.
+   - Fill in the required details and click **Done**.
+
+6. **Generate the JSON File:**
+   - Select the created service account.
+   - Navigate to the **Keys** tab and click **Add Key** > **Create New Key**.
+   - Select **JSON** and download the file. This is your Google Sheets authentication file.
+
+7. **Share the Google Sheet with the Service Account:**
+   - Open the Google Sheet you want to use.
+   - Share it with the email address of the service account (found in the JSON file).
+
+8. **Use the JSON File:**
+   - Place the JSON file in your project directory.
+   - Provide its path using the `-gsc` argument when running the script.
+
 ## Database Versioning and Information Management
 
 This folder contains various databases and their respective version information. Each database directory includes a `version.yml` file to track key details such as version number, source, and additional notes. This helps ensure transparency and consistency when sharing or updating databases.
