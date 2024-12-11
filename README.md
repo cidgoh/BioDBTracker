@@ -167,4 +167,4 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 ## Contact
 
-For questions or suggestions, reach out to duanjun1981@gmail.com.
+For questions or suggestions, reach out to tools@cidgoh.ca.
