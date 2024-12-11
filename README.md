@@ -18,8 +18,8 @@ Ensure you have Python installed. We recommend using Conda for managing dependen
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/cidgoh/BioDBTracker
+    cd BioDBTracker
     ```
 
 2. Set up the Conda environment:
@@ -112,14 +112,10 @@ DatabaseName/
      version: v1.0-custom
      date: "2024-01-2024"
      downloaded_from: "RefSeq"
-     downloaded_by: "Ali Mirza"
-     tested_by: ""
-     note: |
-        This custom database was built using genomes from RefSeq release 221 
-        (includes: archaea, bacteria, human, plasmid, UniVec_Core, and viral genomes) 
-        downloaded on March-01-2024. Also includes mouse genome (Mus musculus, 
-        Strain C57BL/6J, NCBI RefSeq assembly 000001635.27, uploaded on Jun 24, 2020).
-        A 50GB Kraken2 database was built and a 150kmer Bracken database.
+     downloaded_by: "JD"
+     tested_by: "MT"
+     note:  This database was built using Kraken 2 version 2.1.2. It includes genomes from RefSeq release 221, covering the following: Archaea, Bacter, Human, Plasmid, UniVec_Core, Viral genomes
+
    ```
 
 4. **Zipped Files:**
