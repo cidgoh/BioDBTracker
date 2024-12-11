@@ -40,7 +40,7 @@ Ensure you have Python installed. We recommend using Conda for managing dependen
 Run the script with the following command:
 
 ```bash
-python scan_cidgoh_db.py -i dir1 dir2 -db database_name -gs -gsn google_sheet -gss google_sheet_name -gsc database-cidgoh-1dbcf7c8bf62.json
+python BioDBTracker.py -i dir1 dir2 -db database_name -gs -gsn google_sheet -gss google_sheet_name -gsc database-cidgoh-1dbcf7c8bf62.json
 ```
 
 ### Command-Line Arguments
@@ -57,7 +57,7 @@ python scan_cidgoh_db.py -i dir1 dir2 -db database_name -gs -gsn google_sheet -g
 Here's an example command:
 
 ```bash
-python scan_cidgoh_db.py -i samples/input1 samples/input2 -db sample_db -gs -gsn MyGoogleSheet -gss Sheet1 -gsc my-google-credentials.json
+python BioDBTracker.py -i samples/input1 samples/input2 -db sample_db -gs -gsn MyGoogleSheet -gss Sheet1 -gsc my-google-credentials.json
 ```
 ## How to Generate the Google Sheets Authentication File
 
