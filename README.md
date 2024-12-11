@@ -94,6 +94,56 @@ To enable Google Sheets integration, you need to generate a credentials file (JS
    - Place the JSON file in your project directory.
    - Provide its path using the `-gsc` argument when running the script.
 
+## Docker Usage
+
+### Prerequisites
+- Install Docker on your system. Follow the instructions from the [Docker website](https://www.docker.com/).
+
+### Running the Docker Image
+The `BioDBTracker` Docker image provides a streamlined way to run the tool without manually setting up dependencies.
+
+1. **Pull the Docker Image**  
+
+   ```bash
+   docker pull cidgoh/biodbtracker:v0.1
+   ```
+
+2. **Run the Docker Container**  
+   Use the following command to run the container with your local database directory mounted:
+   ```bash
+   docker run -it \
+     -v /path/to/local/db:/path/to/local/db \
+     cidgoh/biodbtracker:v0.1 \
+     -i /path/to/local/db \
+     -db /path/to/local/db/sqlite.db
+   ```
+
+   Replace `/path/to/local/db` with the absolute path to your local database directory.
+
+3. **Explanation of the Command**  
+   - `-v /path/to/local/db:/path/to/local/db`: Mounts your local database directory into the container.
+   - `-i /path/to/local/db`: Specifies the input directory.
+   - `-db /path/to/local/db/sqlite.db`: Specifies the database to use.
+
+4. **Example Command**  
+   Assuming your local database path is `/home/user/BioDBTracker/db`:
+   ```bash
+   docker run -it \
+     -v /home/user/BioDBTracker/db:/home/user/BioDBTracker/db \
+     cidgoh/biodbtracker:v0.1 \
+     -i /home/user/BioDBTracker/db \
+     -db /home/user/BioDBTracker/db/sqlite.db
+   ```
+
+5. **Results**  
+   The tool will process the specified databases and display the output in the terminal or save it to the designated location (e.g., SQLite or Google Sheets).
+
+---
+
+
+
+
+
 ## Database Versioning and Information Management
 
 This folder contains various databases and their respective version information. Each database directory includes a `version.yml` file to track key details such as version number, source, and additional notes. This helps ensure transparency and consistency when sharing or updating databases.
