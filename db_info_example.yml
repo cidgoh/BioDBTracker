@@ -1,0 +1,8 @@
+database_info:
+  name: Kraken 2
+  version: v2.1.2
+  date: "2024-12-10"
+  downloaded_from: "https://github.com/DerrickWood/kraken2"
+  downloaded_by: "AM"  # Your initials
+  tested_by: "JB"      # Tester initials, if applicable
+  note: This database was built using Kraken 2 version 2.1.2. It includes genomes from RefSeq release 221, covering the following: Archaea, Bacter, Human, Plasmid, UniVec_Core, Viral genomes
